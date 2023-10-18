@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.IvanovJD.Sprint2.Task4.V16.Lib;
+using Tyuiu.IvanovJD.Sprint2.Task5.V4.Lib;
 
-namespace Tyuiu.IvanovJD.Sprint2.Task4.V16
+namespace Tyuiu.IvanovJD.Sprint2.Task2.V29
 {
     class Program
     {
@@ -16,9 +16,9 @@ namespace Tyuiu.IvanovJD.Sprint2.Task4.V16
             Console.Title = "Спринт #1 | Выполнил: Иванов Я. Д. | ПКТБ-23-2";
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("* Спринт #2                                                                *");
-            Console.WriteLine("* Тема: Базовые навыки работы в С#                                         *");
-            Console.WriteLine("* Задание #4                                                               *");
-            Console.WriteLine("* Вариант #16                                                              *");
+            Console.WriteLine("* Тема: оператор switch                                                    *");
+            Console.WriteLine("* Задание #5                                                               *");
+            Console.WriteLine("* Вариант #4                                                               *");
             Console.WriteLine("* Выполнил: Иванов Ярослав Дмитриевич | ПКТБ-23-2                          *");
             Console.WriteLine("****************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                 *");
@@ -29,24 +29,19 @@ namespace Tyuiu.IvanovJD.Sprint2.Task4.V16
             Console.WriteLine("****************************************************************************");
 
             DataService ds = new DataService();
-
-            Console.Write("Введите х: ");
-            double x = Convert.ToDouble(Console.ReadLine());
-
-            Console.Write("Введите y: ");
-            double y = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Введите номер масти: ");
+            int value = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Значение функции: " + ds.Calculate(x, y));
+            Console.WriteLine("Масть: " + ds.FindCardSuit(value));
 
             Console.ReadKey();
         }
+
+
     }
 }
-        
-    
-
